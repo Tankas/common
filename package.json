@@ -9,6 +9,11 @@
     "precommit": "echo precommit-run-test",
     "commit": "cz"
   },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Tankas/common.git"
