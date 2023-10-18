@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "eslint": "npx eslint src/**"
+    "eslint": "npx eslint src/**",
+    "commit": "cz"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,9 @@
   },
   "homepage": "https://github.com/Tankas/common#readme",
   "devDependencies": {
-    "eslint": "^8.42.0"
+    "@commitlint/cli": "^17.8.0",
+    "@commitlint/config-conventional": "^17.8.0",
+    "eslint": "^8.42.0",
+    "husky": "^8.0.3"
   }
 }
