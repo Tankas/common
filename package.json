@@ -10,7 +10,8 @@
     "install:commit-msg": "npx husky add .husky/commit-msg 'npx commitlint --edit $1'",
     "install:pre-commit": "npx husky add .husky/pre-commit 'npm run precommit'",
     "prepare": "rm -rf .husky && npx husky install && npm run install:commit-msg && npm run install:pre-commit",
-    "commit": "cz"
+    "commit": "cz",
+    "prettier": "prettier -c --write \"src/**\""
   },
   "config": {
     "commitizen": {
@@ -30,10 +31,12 @@
   "devDependencies": {
     "@commitlint/cli": "^17.8.0",
     "@commitlint/config-conventional": "^17.8.0",
+    "@umijs/fabric": "^4.0.1",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^7.0.0",
     "eslint": "^8.42.0",
-    "husky": "^8.0.3"
+    "husky": "^8.0.3",
+    "prettier": "3.0.3"
   }
 }
