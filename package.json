@@ -14,6 +14,9 @@
     "prettier": "prettier -c --write \"src/**\"",
     "lint:staged": "npx lint-staged"
   },
+  "lint-staged": {
+    "*.js": "npm run eslint"
+  },
   "config": {
     "commitizen": {
       "path": "node_modules/cz-customizable"
