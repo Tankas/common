@@ -2,7 +2,7 @@
  * @Author: tanka
  * @Date: 2023-06-16 15:17:05
  * @LastEditors: tanka
- * @LastEditTime: 2023-10-19 17:38:49
+ * @LastEditTime: 2023-10-19 17:41:43
  * @FilePath: /common/.eslintrc.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -13,6 +13,8 @@ module.exports = {
     page: true,
     REACT_APP_ENV: true,
   },
+  parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint'],
   rules: {
     'no-plusplus': 0,
     'no-use-before-define': 0,
@@ -47,7 +49,7 @@ module.exports = {
     'array-callback-return': 0,
     'consistent-return': 0,
     'no-irregular-whitespace': 0,
-    // "@typescript-eslint/no-unused-vars": 2,
+    '@typescript-eslint/no-unused-vars': 2,
     'func-names': 1,
     'prefer-arrow-callback': 1,
     'one-var': 0,
